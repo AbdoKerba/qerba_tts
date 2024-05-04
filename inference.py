@@ -55,7 +55,8 @@ def infer(args):
             wav_list = model.tts(batch,
                                  batch_size=args.batch_size,
                                  denoise=args.denoise,
-                                 speed=args.speed)
+                                 speed=args.speed,
+                                vowelizer='shakkala')
 
             # save wavs and add entries to html file
             for (text_line, wav) in zip(batch, wav_list):
