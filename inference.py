@@ -56,7 +56,7 @@ def infer(args):
                                  batch_size=args.batch_size,
                                  denoise=args.denoise,
                                  speed=args.speed,
-                                vowelizer='shakkala')
+                                vowelizer='shakkelha')
 
             # save wavs and add entries to html file
             for (text_line, wav) in zip(batch, wav_list):
